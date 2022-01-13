@@ -345,6 +345,7 @@ svg {
   margin: 0 0 60px;
 }
 .description-start {
+  margin-top: 20px;
   display: inline-flex;
 }
 
@@ -409,9 +410,12 @@ svg {
 .post-content p {
   display: inline-flex;
   align-items: center;
+  align-self: flex-start;
+  padding-right: 10px;
 }
 .post-content span {
   padding-right: 10px;
+  min-width: 15%;
 }
 .post-content blockquote,
 .post-content blockquote p {
