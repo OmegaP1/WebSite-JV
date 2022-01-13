@@ -295,9 +295,9 @@ svg {
   will-change: transform;
 }
 @media (max-width: 1024px) {
-  .post-image {
+  /*.post-image {
     position: absolute;
-  }
+  } */
 }
 .post-title {
   font-family: poppins bold, sans-serif;
@@ -346,16 +346,16 @@ svg {
 }
 .description-start {
   margin-top: 20px;
-  display: inline-flex;
+  align-self: flex-start;
 }
 
 .description-end {
-  display: inline-flex;
   align-self: flex-end;
 }
+
 .post-content {
   font-family: proxima nova regular, sans-serif;
-  font-size: 27px;
+  font-size: 0.7vh;
   line-height: 36px;
   color: #a1a1a2;
   background: #fff;
@@ -363,6 +363,34 @@ svg {
   z-index: 1;
   height: 100%;
   padding: 45px 0;
+}
+
+@media (min-width: 576px) {
+  .post-content {
+    font-size: 0.7vh;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .post-content {
+    font-size: 1vh;
+    line-height: 23px;
+  }
+}
+
+@media (min-width: 992px) {
+  .post-content {
+    font-size: 1.5vh;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-content {
+    font-size: 2vh;
+    line-height: 36px;
+  }
 }
 .post-content-header {
   text-align: center;
