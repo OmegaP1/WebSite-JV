@@ -543,7 +543,6 @@ svg {
   background: #9ebba1;
   overflow: hidden;
   position: relative;
-  border-radius: 20px;
   display: flex;
   justify-content: center;
 }
