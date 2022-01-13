@@ -4,6 +4,11 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+.divider-header {
+  padding: 1.5rem;
+}
+
 .iframe-wrap {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 0;
@@ -339,24 +344,74 @@ svg {
   font-size: 16px;
   margin: 0 0 60px;
 }
+.description-start {
+  display: inline-flex;
+}
+
+.description-end {
+  display: inline-flex;
+  align-self: flex-end;
+}
 .post-content {
   font-family: proxima nova regular, sans-serif;
-  font-size: 20px;
+  font-size: 27px;
   line-height: 36px;
-  color: #3b3b3b;
+  color: #a1a1a2;
   background: #fff;
   position: relative;
   z-index: 1;
   height: 100%;
-  padding: 90px 0;
+  padding: 45px 0;
+}
+.post-content-header {
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
 }
 .post-container {
+  justify-content: center;
   margin: 0 auto;
-  max-width: 700px;
-  padding: 0 20px;
+  padding: 0 60px;
 }
+.post-container-image {
+  border: 3px solid #9ebba1;
+  border-radius: 30px;
+}
+.post-container-text {
+  display: grid;
+  flex-direction: row;
+  height: 100%;
+  border: 3px solid #9ebba1;
+  border-radius: 30px;
+  padding: 10px;
+}
+.post-container-H1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  background: #ffffff;
+  border: 3px solid #9ebba1;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.post-container-p {
+  border: 3px solid #9ebba1;
+  border-radius: 30px;
+  font-weight: bolder;
+  width: 100%;
+  display: inline-flex;
+}
+.post-container-span {
+  padding: 20px;
+}
+
 .post-content p {
-  margin: 21px 0;
+  display: inline-flex;
+  align-items: center;
+}
+.post-content span {
+  padding-right: 10px;
 }
 .post-content blockquote,
 .post-content blockquote p {
@@ -367,24 +422,36 @@ svg {
   margin: 48px 0;
 }
 .post-content a {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-  color: #3b3b3b;
+  border: 3px solid #9ebba1;
+  border-radius: 30px;
+  color: #a1a1a2;
   text-decoration: none;
   transition: border 0.3s ease-in-out;
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  align-self: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .post-content a:hover,
 .post-content a:focus {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  background-color: #f5deb2;
+  color: white;
 }
 .post-content img {
   min-width: 100%;
   max-width: 100%;
 }
+
 .post-content h1 {
-  color: rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 90px 0 30px;
-  font-size: 40px;
+  font-size: 35px;
+  font-weight: bolder;
+  width: 100%;
+  align-self: center;
 }
 .post-content h2,
 .post-content h2 a {
@@ -469,11 +536,12 @@ svg {
   }
 }
 .divider {
-  background: #1c1d21;
-  height: 300px;
-  margin-top: 90px;
+  background: #9ebba1;
   overflow: hidden;
   position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 .top-divider {
   width: 0;
