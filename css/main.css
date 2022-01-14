@@ -364,6 +364,39 @@ svg {
   height: 100%;
   padding: 45px 0;
 }
+
+@media (max-width: 1400px) {
+  .post-container-image {
+    height: 490px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .post-container-image {
+    height: 400px !important;
+  }
+  .post-content {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .post-content a {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 995px) {
+  .post-content {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .post-content a {
+    font-size: 18px !important;
+  }
+  .post-container-image {
+    height: 300px !important;
+  }
+}
+
 .post-content-header {
   text-align: center;
   color: white;
@@ -377,6 +410,11 @@ svg {
 .post-container-image {
   border: 3px solid #9ebba1;
   border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 580px;
+  width: 100%;
 }
 .post-container-text {
   display: grid;
