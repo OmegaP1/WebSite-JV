@@ -351,11 +351,37 @@ svg {
 
 .description-end {
   align-self: flex-end;
+  display: inline-flex;
+  overflow-x: auto;
+}
+
+.stack-tec {
+  width: 100%;
+  border: 3px solid #9ebba1;
+  border-radius: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: unset;
+  overflow-x: auto;
+  user-select: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.stack-tec p {
+  border: 3px solid #9ebba1;
+  border-radius: 30px;
+  padding: 5px;
+  margin-right: 5px;
+  margin: 3px;
 }
 
 .post-content {
   font-family: proxima nova regular, sans-serif;
-  font-size: 0.7vh;
+  font-size: 3vh;
   line-height: 36px;
   color: #a1a1a2;
   background: #fff;
@@ -386,14 +412,39 @@ svg {
 
 @media (max-width: 995px) {
   .post-content {
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 12px !important;
+    line-height: 22px !important;
   }
   .post-content a {
     font-size: 18px !important;
   }
   .post-container-image {
     height: 300px !important;
+  }
+  .Calendar-SVG,
+  .Project_Stack-SVG,
+  .Github-SVG,
+  .Project_Description-SVG {
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .post-content {
+    font-size: 12px !important;
+    line-height: 22px !important;
+  }
+  .post-content a {
+    font-size: 15px !important;
+  }
+  .post-container-image {
+    height: 300px !important;
+  }
+  .Calendar-SVG,
+  .Project_Stack-SVG,
+  .Github-SVG,
+  .Project_Description-SVG {
+    height: 30px !important;
   }
 }
 
@@ -445,11 +496,18 @@ svg {
   padding: 20px;
 }
 
+.Divider-SVG {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .post-content p {
   display: inline-flex;
   align-items: center;
   align-self: flex-start;
   padding-right: 10px;
+  padding-left: 10px;
 }
 .post-content span {
   padding-right: 10px;
@@ -485,7 +543,6 @@ svg {
 }
 .post-content img {
   min-width: 100%;
-  max-width: 100%;
 }
 
 .post-content h1 {
@@ -520,6 +577,11 @@ svg {
     max-width: 60%;
   }
 }
+@media (max-width: 770px) {
+  .stack-tec {
+    text-align-last: center;
+  }
+}
 .post-content .article-list {
   list-style: none;
   margin: 0;
@@ -547,7 +609,6 @@ svg {
 .post-content .article-link:hover,
 .post-content .article-link:focus {
   border: 0;
-  opacity: 0.5;
 }
 .post-content .article-title,
 .post-content .article-date {
@@ -675,33 +736,12 @@ svg {
   width: 35% !important;
   background: rgba(0, 0, 0, 0.7);
 }
-@font-face {
-  font-family: neuzeit grotesk bold;
-  src: url(../font/NeuzeitGrotesk-Bold.woff2) format("woff2"), url(../font/NeuzeitGrotesk-Bold.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: poppins light;
-  src: url(../font/Poppins-Light.woff2) format("woff2"), url(../font/Poppins-Light.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: poppins bold;
-  src: url(../font/Poppins-Bold.woff2) format("woff2"), url(../font/Poppins-Bold.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: proxima nova regular;
-  src: url(../font/ProximaNova-Regular.woff2) format("woff2"), url(../font/ProximaNova-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: verveine regular;
-  src: url(../font/Verveine-Regular.woff2) format("woff2"), url(../font/Verveine-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
+
+.footer {
+  background: #a1a1a2;
+  color: #a1a1a2;
+  position: relative;
+  z-index: 1;
+  text-align-last: center;
+  padding: 30px;
 }
