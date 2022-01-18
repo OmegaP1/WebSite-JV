@@ -8,6 +8,9 @@ body {
 .divider-header {
   padding: 1.5rem;
 }
+.divider-header span {
+  font-size: 20px;
+}
 
 .iframe-wrap {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -66,7 +69,7 @@ code {
   text-decoration: none;
   letter-spacing: 2px;
   padding: 10px 20px;
-  font-family: neuzeit grotesk bold, sans-serif;
+  font-family: poppins light, sans-serif;
 }
 .logo:hover {
   opacity: 0.7;
@@ -275,7 +278,7 @@ svg {
   background-position: center;
   background-size: cover;
   position: fixed;
-  opacity: 0.4;
+  opacity: 0.7;
   width: 100%;
   height: 100%;
   top: 0;
@@ -300,7 +303,9 @@ svg {
   } */
 }
 .post-title {
-  font-family: poppins bold, sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
 }
 .post-header .post-title {
@@ -327,7 +332,9 @@ svg {
 .post-subtitle {
   color: #fff;
   font-size: 16px;
-  font-family: poppins light, sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
@@ -357,7 +364,7 @@ svg {
 
 .stack-tec {
   width: 100%;
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   border-radius: 30px;
   white-space: nowrap;
   overflow: hidden;
@@ -372,7 +379,7 @@ svg {
 }
 
 .stack-tec p {
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   border-radius: 30px;
   padding: 5px;
   margin-right: 5px;
@@ -380,8 +387,10 @@ svg {
 }
 
 .post-content {
-  font-family: proxima nova regular, sans-serif;
-  font-size: 3vh;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5vh;
   line-height: 36px;
   color: #a1a1a2;
   background: #fff;
@@ -459,7 +468,7 @@ svg {
   padding: 0 60px;
 }
 .post-container-image {
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -471,7 +480,7 @@ svg {
   display: grid;
   flex-direction: row;
   height: 100%;
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   border-radius: 30px;
   padding: 10px;
 }
@@ -481,12 +490,13 @@ svg {
   font-size: 40px;
   font-weight: bolder;
   background: #ffffff;
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   box-sizing: border-box;
   border-radius: 30px;
+  color: #141c64;
 }
 .post-container-p {
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   border-radius: 30px;
   font-weight: bolder;
   width: 100%;
@@ -515,16 +525,18 @@ svg {
 }
 .post-content blockquote,
 .post-content blockquote p {
-  font-family: verveine regular, sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   color: rgba(0, 0, 0, 0.7);
   font-size: 36px;
   line-height: 44px;
   margin: 48px 0;
 }
 .post-content a {
-  border: 3px solid #9ebba1;
+  border: 3px solid #c58a4a;
   border-radius: 30px;
-  color: #a1a1a2;
+  color: #141c64;
   text-decoration: none;
   transition: border 0.3s ease-in-out;
   text-align: center;
@@ -616,14 +628,18 @@ svg {
 }
 .post-content .article-title {
   max-width: 500px;
-  font-family: poppins bold, sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-weight: 700;
   font-size: 24px;
   text-align: left;
 }
 .post-content .article-date {
   color: rgba(0, 0, 0, 0.5);
-  font-family: poppins light, sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   font-weight: 300;
   min-width: 100px;
@@ -639,7 +655,7 @@ svg {
   }
 }
 .divider {
-  background: #9ebba1;
+  background: #141c64;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -744,4 +760,50 @@ svg {
   z-index: 1;
   text-align-last: center;
   padding: 30px;
+}
+
+.footer img {
+  pointer-events: none;
+  user-select: none;
+}
+.PhoneNumber {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.PhoneNumber a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.PhoneNumber img {
+  padding: 10px;
+}
+
+.Email {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 25px;
+}
+.Email a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.Email a:hover {
+}
+
+.Email img {
+  padding: 10px;
+}
+
+.SocialMedia {
+  display: flex;
+  place-content: space-evenly;
+  padding-top: 10px;
+  margin-top: 10px;
 }
