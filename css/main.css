@@ -468,6 +468,10 @@ svg {
   padding: 20px;
 }
 
+.skill-card:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
 .post-container-Main {
   padding: 100px;
   margin: 0 auto;
@@ -528,6 +532,11 @@ svg {
   height: 580px;
   width: 100%;
 }
+
+.post-container-image:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
 .post-container-text {
   display: grid;
   flex-direction: row;
@@ -535,6 +544,10 @@ svg {
   border: 3px solid #c58a4a;
   border-radius: 30px;
   padding: 10px;
+}
+
+.post-container-text:hover {
+  box-shadow: 10px 10px 5px grey;
 }
 .post-container-H1 {
   padding: 20px;
@@ -547,12 +560,19 @@ svg {
   border-radius: 30px;
   color: #141c64;
 }
+.post-container-H1:hover {
+  box-shadow: 10px 10px 5px grey;
+}
 .post-container-p {
   border: 3px solid #c58a4a;
   border-radius: 30px;
   font-weight: bolder;
   width: 100%;
   display: inline-flex;
+}
+
+.post-container-p:hover {
+  box-shadow: 10px 10px 5px grey;
 }
 .post-container-span {
   padding: 20px;
