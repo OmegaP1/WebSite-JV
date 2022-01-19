@@ -313,14 +313,17 @@ svg {
   margin: 59px auto 0;
   position: relative;
   z-index: 3;
-  font-size: 60px;
+  font-size: 4vh !important;
   line-height: 10vh;
+}
+.post-header .post-title p {
+  font-size: 3vh !important;
 }
 .post-content .post-title {
   color: #000;
   margin: 90px auto 0;
   max-width: none;
-  font-size: 48px;
+  font-size: 3vh !important;
   line-height: 60px;
 }
 .post-content .post-image-full {
@@ -364,7 +367,7 @@ svg {
 
 .stack-tec {
   width: 100%;
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   white-space: nowrap;
   overflow: hidden;
@@ -379,7 +382,7 @@ svg {
 }
 
 .stack-tec p {
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   padding: 5px;
   margin-right: 5px;
@@ -469,25 +472,19 @@ svg {
   letter-spacing: 5px;
 }
 .skill-card {
+  box-shadow: 5px 5px 5px #98a1b9;
   display: block;
   height: 100%;
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   padding: 20px;
-}
-
-.skill-card:hover {
-  box-shadow: 10px 10px 5px grey;
 }
 
 .certifications-card {
-  border: 3px solid #c58a4a;
+  box-shadow: 5px 5px 5px #98a1b9;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   padding: 20px;
-}
-
-.certifications-card:hover {
-  box-shadow: 10px 10px 5px grey;
 }
 
 .post-container-Main {
@@ -497,16 +494,14 @@ svg {
 }
 
 .containeraa {
+  box-shadow: 5px 5px 5px #98a1b9 !important;
   max-width: 70% !important;
-  border: 3px solid #c58a4a !important;
+  border: 3px solid #2a3754 !important;
   border-radius: 30px !important;
-}
-.containeraa:hover {
-  box-shadow: 10px 10px 5px grey;
 }
 
 .post-container-Main embed {
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
 }
 
@@ -531,9 +526,9 @@ svg {
 }
 
 .post-container-Main-Div a {
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
-  color: #141c64;
+  color: #2a3754;
   text-decoration: none;
   transition: border 0.3s ease-in-out;
   text-align: center;
@@ -547,8 +542,10 @@ svg {
 }
 .post-container-Main-Div a:hover,
 .post-container-Main-Div a:focus {
+  box-shadow: 5px 5px 5px #98a1b9;
   background-color: #f5deb2;
   color: white;
+  text-decoration: none !important;
 }
 
 .post-container {
@@ -557,7 +554,8 @@ svg {
   padding: 0 60px;
 }
 .post-container-image {
-  border: 3px solid #c58a4a;
+  box-shadow: 5px 5px 5px #98a1b9;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -566,46 +564,35 @@ svg {
   width: 100%;
 }
 
-.post-container-image:hover {
-  box-shadow: 10px 10px 5px grey;
-}
-
 .post-container-text {
+  box-shadow: 5px 5px 5px #98a1b9;
   display: grid;
   flex-direction: row;
   height: 100%;
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   padding: 10px;
 }
 
-.post-container-text:hover {
-  box-shadow: 10px 10px 5px grey;
-}
 .post-container-H1 {
+  box-shadow: 10px 10px 5px #98a1b9;
   padding: 20px;
   text-align: center !important;
   font-size: 40px;
   font-weight: bolder;
   background: #ffffff;
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   box-sizing: border-box;
   border-radius: 30px;
-  color: #141c64;
-}
-.post-container-H1:hover {
-  box-shadow: 10px 10px 5px grey;
+  color: #2a3754;
 }
 .post-container-p {
-  border: 3px solid #c58a4a;
+  box-shadow: 10px 10px 5px grey;
+  border: 3px solid #2a3754;
   border-radius: 30px;
   font-weight: bolder;
   width: 100%;
   display: inline-flex;
-}
-
-.post-container-p:hover {
-  box-shadow: 10px 10px 5px grey;
 }
 .post-container-span {
   padding: 20px;
@@ -643,9 +630,9 @@ svg {
   margin: 48px 0;
 }
 .post-content a {
-  border: 3px solid #c58a4a;
+  border: 3px solid #2a3754;
   border-radius: 30px;
-  color: #141c64;
+  color: #2a3754;
   text-decoration: none;
   transition: border 0.3s ease-in-out;
   text-align: center;
@@ -659,6 +646,7 @@ svg {
 }
 .post-content a:hover,
 .post-content a:focus {
+  box-shadow: 5px 5px 5px #98a1b9;
   background-color: #f5deb2;
   color: white;
 }
@@ -764,7 +752,7 @@ svg {
   }
 }
 .divider {
-  background: #141c64;
+  background: #2a3754;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -832,7 +820,7 @@ textarea {
 
 .form-groupaa input:focus-visible,
 textarea:focus-visible {
-  border: 3px solid #c58a4a !important;
+  border: 2px solid #2a3754 !important;
   border-radius: 30px !important;
   outline: none !important;
 }
@@ -892,8 +880,7 @@ textarea:focus-visible {
 }
 
 .footer {
-  background: #a1a1a2;
-  color: #a1a1a2;
+  background: #2a3754;
   position: relative;
   z-index: 1;
   text-align-last: center;
@@ -932,7 +919,10 @@ textarea:focus-visible {
   color: white;
 }
 
-.Email a:hover {
+a:hover {
+  color: white !important;
+  font-weight: 700 !important;
+  text-decoration: revert !important;
 }
 
 .Email img {
