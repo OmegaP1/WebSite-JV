@@ -643,12 +643,17 @@ svg {
   margin-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition-property: background-color, color, font-weight;
+  transition-duration: 0.4s;
 }
 .post-content a:hover,
 .post-content a:focus {
   box-shadow: 5px 5px 5px #98a1b9;
-  background-color: #f5deb2;
+  background-color: #2a3754;
   color: white;
+  transition-property: background-color, color, font-weight;
+  transition-duration: 0.4s;
+  text-decoration: none !important;
 }
 .post-content img {
   min-width: 100%;
@@ -815,6 +820,7 @@ svg {
 }
 .form-groupaa input,
 textarea {
+  font-family: ;
   border-radius: 30px !important;
 }
 
@@ -826,6 +832,7 @@ textarea:focus-visible {
 }
 
 .form-groupaa textarea {
+  padding: 20px !important;
   resize: none !important;
 }
 
@@ -872,11 +879,17 @@ textarea:focus-visible {
   border: 1px solid rgba(128, 128, 128, 0.199) !important;
   border-radius: 30px !important;
   color: #a1a1a2 !important;
+  transition-duration: 0.4s !important;
+  text-decoration: none !important;
 }
 
 .submit-button:hover {
-  background-color: #f5deb2 !important;
+  box-shadow: 5px 5px 5px #98a1b9 !important;
+  background-color: #2a3754 !important;
   color: white !important;
+  transition-property: background-color, color, font-weight !important;
+  transition-duration: 0.4s !important;
+  text-decoration: none !important;
 }
 
 .footer {
