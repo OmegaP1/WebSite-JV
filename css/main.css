@@ -496,6 +496,15 @@ svg {
   margin: 0 auto;
 }
 
+.containeraa {
+  max-width: 70% !important;
+  border: 3px solid #c58a4a;
+  border-radius: 30px;
+}
+.containeraa:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
 .post-container-Main embed {
   border: 3px solid #c58a4a;
   border-radius: 30px;
