@@ -486,9 +486,13 @@ svg {
   padding: 20px;
 }
 
+.certifications-card:hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
 .post-container-Main {
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 60px;
+  padding-left: 60px;
   margin: 0 auto;
 }
 
@@ -571,7 +575,7 @@ svg {
 }
 .post-container-H1 {
   padding: 20px;
-  text-align: center;
+  text-align: center !important;
   font-size: 40px;
   font-weight: bolder;
   background: #ffffff;
@@ -902,4 +906,10 @@ svg {
   place-content: space-evenly;
   padding-top: 10px;
   margin-top: 10px;
+}
+
+.Roadmap {
+  width: -webkit-fill-available;
+  padding-right: 60px;
+  padding-left: 60px;
 }
