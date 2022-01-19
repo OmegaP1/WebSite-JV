@@ -837,6 +837,10 @@ textarea:focus-visible {
   outline: none !important;
 }
 
+.form-groupaa textarea {
+  resize: none !important;
+}
+
 .form input[type="email"] {
   border-radius: 30px;
   font-size: 15px;
